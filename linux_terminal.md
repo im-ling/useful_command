@@ -35,3 +35,8 @@ ssh-keygen -t ed25519 -C "test@example.com"
 ### git 配置
 git config --global user.email "test@example.com"
 git config --global user.name "ling"
+
+
+
+### check size 文件大小并排序
+for i in `ls -a`; do du -sh $i ; done | sort -h
