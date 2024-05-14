@@ -10,3 +10,7 @@ ffmpeg \
 -i b4ba28b4-deab-4d21-b35c-bff197125227.m4a \
 -filter_complex "[0:a][1:a][2:a][3:a][4:a][5:a][6:a]concat=n=7:v=0:a=1" \
 final.m4a
+
+
+ffmpeg 音频提取
+ffmpeg -i helicopter.mp4 -vn -acodec copy helicopter.aac
