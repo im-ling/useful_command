@@ -40,3 +40,9 @@ git config --global user.name "ling"
 
 ### check size 文件大小并排序
 for i in `ls -a`; do du -sh $i ; done | sort -h
+
+
+### 按修改时间排序
+ls -l -t
+
+### end
