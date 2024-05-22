@@ -1,4 +1,4 @@
-ffmpeg concat 多音频合成
+# ffmpeg concat 多音频合成
 
 ffmpeg \
 -i e56c7b8d-730e-4036-bb1b-785eb7847ef5.m4a \
@@ -12,5 +12,11 @@ ffmpeg \
 final.m4a
 
 
-ffmpeg 音频提取
-ffmpeg -i helicopter.mp4 -vn -acodec copy helicopter.aac
+# ffmpeg 音频提取
+ffmpeg -i 5013681767452924.mp4 -vn -acodec copy 5013681767452924.aac
+
+# sample rate 转换
+$ ffmpeg -i final.mp3 -ar 44100 final44100.mp3
+
+# codecs 查询
+ffmpeg -codecs | grep encoders 
